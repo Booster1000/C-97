@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        Rocket Chatter
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Fire_Chatter_Chat.css">
+</head>
+
+<body>
+    <button id="logout" onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>LogOut</button>
+    <center>
+        <div id="container">
+            <h1 class="headings">Fire Chatter<sup><img id="mail"
+                        src="https://cdn-icons-png.flaticon.com/512/254/254018.png"></sup>
+        </div>
+        <br>
+        <div id="messages"></div>
+
+
+        <div id="contain">
+            <h4 id="text">Send:</h4>
+            <input placeholder="Message" id='msg'>
+            <br>
+            <br>
+            <button onclick="send()" id='message_send'>Send</button>
+        </div>
+    </center>
+    <script src="Fire_Chatter_Chat.js"></script>
+</body>
+
+</html>
